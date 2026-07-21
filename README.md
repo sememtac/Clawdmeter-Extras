@@ -12,6 +12,23 @@ Shift+Tab over BLE HID for Claude Code's voice mode and mode-toggle shortcuts.
 
 The Clawd animations come from [claudepix](https://claudepix.vercel.app), [@amaanbuilds](https://x.com/amaanbuilds)'s library of pixel-art Clawd sprites, check it out, it's lovely.
 
+---
+
+## 🔱 Fork extras ([@sememtac](https://github.com/sememtac))
+
+> This is a fork of [Clawdmeter](https://github.com/HermannBjorgvin/Clawdmeter) by [@HermannBjorgvin](https://github.com/HermannBjorgvin) with a few extra desk-toy features, offered back upstream in **[PR #116](https://github.com/HermannBjorgvin/Clawdmeter/pull/116)**. Built and tested on the ESP32-S3-Touch-AMOLED-2.16.
+
+- **📊 More pages** — Trend (session + weekly sparkline), Burn (%/hr + ETA-to-100%), and dedicated Session / Weekly detail, on top of the original Usage view. Cycle with the buttons or swipe left/right.
+- **👆 Touch-swipe navigation** — rotation-aware, so gestures track "screen up" in any orientation: swipe ⬅️ / ➡️ for pages, ⬆️ / ⬇️ for costumes, tap for the splash.
+- **🔥 Animated burn-rate flame** — an original pixel flame (top-right, where the battery icon sits on battery-less builds) that flickers every frame and grows with your live usage rate.
+- **🎭 Costumes** — dress up the corner mascot: deal-with-it shades, cat ears, sombrero, pom-pom, lightsaber, santa hat, a Darth Maul double-saber, and a rainbow. Swipe up/down to cycle; your pick is saved across reboots.
+
+![Costumes](screenshots/fork-costumes.png)
+
+The code lives on the [`feature/pages-swipe-costumes`](../../tree/feature/pages-swipe-costumes) branch. All added art is **original pixel-art** — no third-party assets — with the generators in [`tools/`](tools/) (`gen_flame.py`, `gen_costumes.py`).
+
+---
+
 ## Screens
 
 The device boots into the splash. Tap the screen anywhere to switch to the Usage view; tap again to flip back to the splash.
